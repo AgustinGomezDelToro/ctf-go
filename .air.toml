@@ -1,0 +1,11 @@
+# .air.toml
+# Configuración básica
+root = "."
+tmp_dir = "tmp"
+
+[build]
+bin = "tmp/main"
+cmd = "go build -o ./tmp/main ."
+
+[watch]
+pattern = ["*.go", "*.html", "*.tmpl", "*.tpl"]
